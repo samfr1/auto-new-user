@@ -1,2 +1,2 @@
 # auto-new-user
-Simple script
+This script is designed to automate the process of creating a new user with superuser privileges on Ubuntu. It first creates a new user named "userroot" with a home directory and the bash shell. Then, it sets the password for this user to "passwordroot". After that, it retrieves the external IP address of the machine using `curl` and assigns it to the variable `external_ip`. Finally, it prints out the external IP address, along with the login, password, and port (which is set to 22 by default) needed for connecting to the newly created user.
