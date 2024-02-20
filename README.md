@@ -28,8 +28,6 @@ To use this script, follow these steps:
 
 After running the script, a new user with the name `userroot` and the password `passwordroot` will be created, and connection details (external IP address, login, password, and port) will be displayed.
 
-**Please make sure you understand the consequences of running this script and use it with caution.**
-
 ### Русский (Russian)
 
 Этот скрипт позволяет автоматизировать процесс создания нового пользователя с суперправами на Ubuntu.
@@ -55,5 +53,3 @@ After running the script, a new user with the name `userroot` and the password `
     ```
 
 После запуска скрипта будет создан новый пользователь с именем `userroot` и паролем `passwordroot`, а также будут выведены данные для подключения (внешний IP-адрес, логин, пароль и порт).
-
-**Пожалуйста, убедитесь, что вы понимаете последствия выполнения этого скрипта и используете его с осторожностью.**
