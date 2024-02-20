@@ -24,4 +24,5 @@ echo "IP Address: $external_ip"
 echo "Username: userroot"
 echo "Password: passwordroot"
 echo "Port: $port"
+echo: "Thx for usung script"
 ```
