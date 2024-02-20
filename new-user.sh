@@ -18,8 +18,8 @@ port=22
 
 # Print out the connection details
 # Вывод данных для подключения
-echo "Для подключения используйте следующие данные:"
-echo "IP-адрес: $external_ip"
-echo "Логин: userroot"
-echo "Пароль: passwordroot"
-echo "Порт: $port"
+echo "Use the following details for connection:"
+echo "IP Address: $external_ip"
+echo "Username: userroot"
+echo "Password: passwordroot"
+echo "Port: $port"
