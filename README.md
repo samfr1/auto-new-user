@@ -1,2 +1,59 @@
-# auto-new-user
-This script is designed to automate the process of creating a new user with superuser privileges on Ubuntu. It first creates a new user named "userroot" with a home directory and the bash shell. Then, it sets the password for this user to "passwordroot". After that, it retrieves the external IP address of the machine using `curl` and assigns it to the variable `external_ip`. Finally, it prints out the external IP address, along with the login, password, and port (which is set to 22 by default) needed for connecting to the newly created user.
+# Скрипт создания нового пользователя
+
+## Использование
+
+### Английский (English)
+
+This script allows you to automate the process of creating a new user with superuser privileges on Ubuntu.
+
+To use this script, follow these steps:
+
+1. Download the script using the following command in your terminal:
+
+    ```bash
+    wget https://raw.githubusercontent.com/samfr1/auto-new-user/main/new-user.sh
+    ```
+
+2. Grant full execution permissions to the script using the `chmod` command:
+
+    ```bash
+    chmod +x new-user.sh
+    ```
+
+3. Run the script:
+
+    ```bash
+    ./new-user.sh
+    ```
+
+After running the script, a new user with the name `userroot` and the password `passwordroot` will be created, and connection details (external IP address, login, password, and port) will be displayed.
+
+**Please make sure you understand the consequences of running this script and use it with caution.**
+
+### Русский (Russian)
+
+Этот скрипт позволяет автоматизировать процесс создания нового пользователя с суперправами на Ubuntu.
+
+Чтобы использовать этот скрипт, выполните следующие шаги:
+
+1. Скачайте скрипт с помощью следующей команды в терминале:
+
+    ```bash
+    wget https://raw.githubusercontent.com/samfr1/auto-new-user/main/new-user.sh
+    ```
+
+2. Предоставьте скрипту полные права на выполнение с помощью команды `chmod`:
+
+    ```bash
+    chmod +x new-user.sh
+    ```
+
+3. Запустите скрипт:
+
+    ```bash
+    ./new-user.sh
+    ```
+
+После запуска скрипта будет создан новый пользователь с именем `userroot` и паролем `passwordroot`, а также будут выведены данные для подключения (внешний IP-адрес, логин, пароль и порт).
+
+**Пожалуйста, убедитесь, что вы понимаете последствия выполнения этого скрипта и используете его с осторожностью.**
