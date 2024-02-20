@@ -11,7 +11,7 @@ echo "userroot:passwordroot" | sudo chpasswd
 
 # Retrieve the external IPv4 address
 # Получение внешнего IPv4-адреса
-external_ip=$(curl -s ifconfig.me)
+external_ip=$(curl -s ipv4bot.whatismyipaddress.com)
 
 # Port for connection (you can change it to your desired port)
 # Порт для подключения (можно изменить на нужный вам порт)
